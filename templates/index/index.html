@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Inicio
+    {{ super() }}
+{% endblock %}
+{%  block content %}
+    <h1>'Hello World!'</h1>
+    {{ now.month}} {{ now.day}} {{ now.year}}
+{% endblock %}
