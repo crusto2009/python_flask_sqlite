@@ -5,7 +5,7 @@
     <title>Formulario</title>
 </head>
 <body>
-<form action="/crear_usuario" method="post">
+<form action="{{ url_for('api.crear_usuario') }}" method="post">
     <label for="usuario_name">Nombre usuario:</label>
     <input type="text" name="usuario_name">
     <label for="usuario_age">Edad usuario:</label>

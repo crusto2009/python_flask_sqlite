@@ -11,9 +11,11 @@
 </head>
 <body>
  <ul>
-        <li><a href="{{ url_for('hello_world') }}">Inicio</a></li>
-        <li><a href="{{ url_for('usuariodashboard') }}">Usuario</a></li>
-        <li><a href="{{ url_for('consulta') }}">Listar</a></li>
+        <li><a href="{{ url_for('api.hello_world') }}">Inicio</a></li>
+        <li><a href="{{ url_for('api.usuariodashboard') }}">Usuario</a></li>
+        <li><a href="{{ url_for('api.consulta') }}">Listar</a></li>
+        <li><a href="{{ url_for('api.crear_usuario') }}">Crear Usuario</a></li>
+        <li><a href="{{ url_for('api.listar_usuarios') }}">Listar Usuarios</a></li>
     </ul>
 <section>
     {% block content %}
